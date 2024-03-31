@@ -20,6 +20,15 @@ header{
     position: relative;
     z-index: 100;
 }
+.col-md-3{
+    padding: 0;
+    margin: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
 header .logo{
     font-weight: bold;
 }
@@ -160,14 +169,15 @@ header .menu{
     inset: auto 10px 10px 10px;
 }
 @media screen and (max-width: 678px) {
+
+    .arrows{
+        display: none;
+    }
     .thumbnail{
         justify-content: start;
     }
     .slider .list .item .content h2{
-        font-size: 60px;
-    }
-    .arrows{
-        top: 10%;
+        font-size: 50px;
     }
 }
 
